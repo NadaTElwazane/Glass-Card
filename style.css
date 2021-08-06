@@ -71,7 +71,6 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
     padding: 3rem;
     max-width: 80vh;
 }
