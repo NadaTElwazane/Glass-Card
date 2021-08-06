@@ -73,7 +73,7 @@ img {
     justify-content: center;
     /* align-items: center; */
     padding: 3rem;
-    min-width: 50vh;
+    max-width: 80vh;
 }
 
 .socials {
