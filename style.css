@@ -22,6 +22,11 @@ main {
     z-index: 2;
     display: flex;
     flex-direction: row;
+    box-shadow: 2px 2px 4px #93959777;
+}
+
+.card:hover, .circle1:hover, .circle2:hover {
+    box-shadow: 4px 4px 8px #86878877;
 }
 
 .circle1, .circle2 {
