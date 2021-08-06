@@ -33,20 +33,25 @@ main {
     position: absolute;
     z-index: 1;
 }
-a{
+
+a {
     color: black;
 }
-.name, p{
+
+.name, p {
     font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.name{
+
+.name {
     font-weight: 700;
     font-size: 3.5em;
     margin-bottom: 1rem;
 }
-.p{
+
+.p {
     font-weight: 400;
 }
+
 .circle1 {
     bottom: 5%;
     left: 15%;
@@ -64,7 +69,6 @@ img {
     z-index: 3;
     border-radius: 2rem 0rem 0rem 2rem;
 }
-
 
 .info {
     text-align: start;
