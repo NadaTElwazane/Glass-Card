@@ -82,12 +82,18 @@ img {
     justify-content: center;
     padding: 3rem;
     max-width: 80vh;
+
 }
 
 .socials {
+    max-width: 80vh;
+    height: 7vh;
     display: flex;
 }
 
 .social {
     padding: 0.5rem;
+}
+.social:hover{
+    font-size: 1.20rem;
 }
