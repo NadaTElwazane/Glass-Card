@@ -6,6 +6,7 @@
 
 main {
     min-height: 100vh;
+    min-width: 100vh;
     background: linear-gradient(to right top, #76cee9, #a8c9f5);
     display: flex;
     justify-content: center;
@@ -23,6 +24,7 @@ main {
     display: flex;
     flex-direction: row;
     box-shadow: 2px 2px 4px #93959777;
+    overflow: hidden;
 }
 
 .card:hover, .circle1:hover, .circle2:hover {
@@ -69,20 +71,20 @@ a {
 
 img {
     object-fit: cover;
-    max-width: 40vh;
-    max-height: 80vh;
+    max-width: 30%;
+    max-height: 80%;
     z-index: 3;
-    border-radius: 2rem 0rem 0rem 2rem;
 }
 
 .info {
     text-align: start;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
+    align-items: stretch;
     padding: 3rem;
     max-width: 80vh;
-
 }
 
 .socials {
@@ -94,6 +96,7 @@ img {
 .social {
     padding: 0.5rem;
 }
-.social:hover{
+
+.social:hover {
     font-size: 1.20rem;
 }
