@@ -5,8 +5,8 @@
 }
 
 main {
-    min-height: 100vh;
-    min-width: 100vh;
+    height: 100vh;
+    max-width: 100vh;
     background: linear-gradient(to right top, #76cee9, #a8c9f5);
     display: flex;
     justify-content: center;
@@ -17,12 +17,13 @@ main {
     background: white;
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.25));
     backdrop-filter: blur(2rem);
-    min-height: 80vh;
-    width: 60%;
-    border-radius: 1.5rem;
+    /* height: 90vh; */
+    width: 90vh;
+    /* border-radius: 1.5rem; */
     z-index: 2;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    /* flex-direction: row; */
     box-shadow: 2px 2px 4px #93959777;
     overflow: hidden;
 }
@@ -34,8 +35,8 @@ main {
 .circle1, .circle2 {
     background: white;
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5));
-    height: 10rem;
-    width: 10rem;
+    height: 5rem;
+    width: 5rem;
     border-radius: 50%;
     position: absolute;
     z-index: 1;
@@ -51,8 +52,8 @@ a {
 
 .name {
     font-weight: 700;
-    font-size: 3.5em;
-    margin-bottom: 1rem;
+    font-size: 2em;
+    /* margin-bottom: 1rem; */
 }
 
 .p {
@@ -69,22 +70,31 @@ a {
     right: 15%;
 }
 
+.image {
+    display: flex;
+    height: 35vh;
+    align-items: center;
+    justify-content: center;
+}
+
 img {
     object-fit: cover;
-    max-width: 30%;
-    max-height: 80%;
+    width: 100%;
+    height: 100%;
+    padding: 2em;
     z-index: 3;
+    border-radius: 3em;
 }
 
 .info {
     text-align: start;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    padding: 3rem;
-    max-width: 80vh;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: space-between;
+    padding: 1rem;
+    max-height: 70%;
 }
 
 .socials {
@@ -99,4 +109,41 @@ img {
 
 .social:hover {
     font-size: 1.20rem;
+}
+
+@media only screen and (min-width: 768px) {
+    main {
+        min-height: 100%;
+        min-width: 100%;
+    }
+    .card {
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+        min-height: 80vh;
+        width: 60%;
+        border-radius: 1.5rem;
+    }
+    .image{
+        width: 100%;
+        height: 100%;
+    }
+    img{
+        padding: 0;
+        border-radius: 0%;
+    }
+    .info{
+        text-align: start;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        padding: 3rem;
+        max-width: 80vh;
+        max-height: 100%;
+    }
+    .circle1,.circle2{
+        height: 10rem;
+        width: 10rem; 
+    }
 }
